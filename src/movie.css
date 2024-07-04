@@ -1,0 +1,28 @@
+body{
+    background-color:white
+}
+table td{
+    /*border:2px solid black;*/
+    padding:inherit;
+}
+table td:hover{
+    background-color: aquamarine;
+    transition: 2s;
+}
+#test{
+    border: 2px solid #25df69;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    /*border-left color: white:*/
+    animation: a_cirq 10s infinite linear;/*added linear timimng function*/
+
+}
+@keyframes a_cirq{
+    0%, 100%{
+        transform: translateX(0vw)rotate(0deg); /* corrected degree  to 'deg'*/
+    }
+    50% {
+        transform: translateX(50vw)rotate(360deg); /*corrected degree to 'deg' */
+    }
+}
